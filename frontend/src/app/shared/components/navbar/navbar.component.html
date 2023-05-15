@@ -1,0 +1,20 @@
+<nav class="nav">
+  <span class="nav-logo"><a routerLink="">Logo</a></span>
+  <ul class="nav-links">
+    <li class="nav-links-item">
+      <a class="nav-links-link" routerLink="shopping">Shopping</a>
+      <a class="nav-links-link" routerLink="shopping">Shopping</a>
+      <a class="nav-links-link" routerLink="shopping">Shopping</a>
+    </li>
+  </ul>
+  <div class="nav-clickables">
+    <button *ngIf="theme()" (click)="changeTheme()">
+      <i class="pi pi-sun"></i>
+    </button>
+    <button *ngIf="!theme()" (click)="changeTheme()">
+      <i class="pi pi-moon"></i>
+    </button>
+    <button (click)="accessMenu()"><i class="pi pi-bars"></i></button>
+    <button (click)="accessMenu()"><i class="pi pi-times"></i></button>
+  </div>
+</nav>
